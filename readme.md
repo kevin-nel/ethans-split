@@ -9,4 +9,4 @@
 - flash both sides using [qmk toolbox](https://github.com/qmk/qmk_toolbox/releases/tag/0.1.1)
 - cols and rows are not identical for each half, consult the promicro pinout and combile the relevant firmware for each half.
   ![pro micro pinout](./promicropins.jpg)
-- thanks to [this wonderful guide](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md)
+- thanks to [this wonderful guide](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md) and the excellent [qmk split keyboard docs](https://docs.qmk.fm/#/feature_split_keyboard?id=split-keyboard)
