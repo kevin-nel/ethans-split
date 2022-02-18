@@ -5,7 +5,8 @@
 - split design (I2C) left hand master
 - minimal QMK (no LEDs or extra stuff)
   - [find the keycodes here](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
+- compile firmware by [setting up qmk](https://docs.qmk.fm/#/newbs_getting_started) and then copying the ``./ethans-split/firmware/qmk_firmware/keyboards/ethan_split`` folder into your qmk keyboards folder and running ``qmk compile -kb ethan_split -km via``
 - flash both sides using [qmk toolbox](https://github.com/qmk/qmk_toolbox/releases/tag/0.1.1)
-- cols and rows are not identical for each half, consult the promicro pinout.
+- cols and rows are not identical for each half, consult the promicro pinout and combile the relevant firmware for each half.
   ![pro micro pinout](./promicropins.jpg)
 - thanks to [this wonderful guide](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md)
