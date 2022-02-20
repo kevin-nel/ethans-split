@@ -1,6 +1,8 @@
 # MCU name
 MCU = atmega32u4
 
+#F_CPU = 8000000
+
 # Bootloader selection
 #   Teensy       halfkay
 #   Pro Micro    caterina
@@ -18,7 +20,7 @@ BOOTLOADER = caterina
 BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
-CONSOLE_ENABLE = no         # Console for debug
+CONSOLE_ENABLE = yes         # Console for debug
 COMMAND_ENABLE = yes        # Commands for debug and configuration
 NKRO_ENABLE = yes           # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
@@ -33,6 +35,5 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 
 SPLIT_KEYBOARD = yes
 
-LAYOUTS = ortho_6x14
+#LAYOUTS = LAYOUT_ethan_split_6x14
 
-LINK_OPTIMIZATION_ENABLE = yes # reduce firmware sice
