@@ -20,12 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-#define MATRIX_ROWS 5
+#define MATRIX_ROWS 12
 #define MATRIX_COLS 7
 
-#define MATRIX_COL_PINS {B6, B2, B3, B1, F7, F6} //left
-//#define MATRIX_ROW_PINS {B5, B4, E6, D7, C6} //right
-#define MATRIX_ROW_PINS {C6, D7, E6, B4, B5}
+/*
+#define MATRIX_COL_PINS {B6, B2, B3, B1, F7, F6, F5} //left
+#define MATRIX_ROW_PINS_RIGHT {C6, D7, E6, B4, B5} //right
+#define MATRIX_ROW_PINS {D4, C6, D7, E6, B4, B5} //left
+*/
+
+#define MATRIX_COL_PINS {F5, F6, F7, B1, B3, B2, B6} //both
+#define MATRIX_ROW_PINS_RIGHT {B5, B4, E6, D7, C6, D4} //right
+#define MATRIX_ROW_PINS {B5, B4, E6, D7, C6, D4} //left
+
 
 #define DIODE_DIRECTION COL2ROW
 #define DEBOUNCE 5
@@ -45,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0x0002
 #define DEVICE_VER 0x0001
 #define MANUFACTURER plainoldcheese
-#define PRODUCT split keeb for Ethan
-#define DESCRIPTION a custom split keyboard built for Ethan by plainoldcheese
+#define PRODUCT battleship
+#define DESCRIPTION custom split keyboard
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 4
